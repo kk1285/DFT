@@ -1,0 +1,14 @@
+table.schemaName = "DFT";
+table.tableType = COLUMNSTORE;
+table.temporary = false;
+table.loggingType = LOGGING;
+table.columns = [
+{name = "activityId"; sqlType = INTEGER; nullable = false;},//Primary Key
+
+{name = "dftNumber"; sqlType = INTEGER; nullable = true; },
+{name = "wfInstanceId";  sqlType = NVARCHAR; nullable = true; length = 40; },
+{name = "status";  sqlType = NVARCHAR; nullable = true; length = 20; },
+{name = "createdOn";  sqlType = TIMESTAMP; nullable = true;  },
+{name = "createdByName";      sqlType = NVARCHAR; nullable = true; length = 100;  }
+];
+table.primaryKey.pkcolumns = ["activityId"];

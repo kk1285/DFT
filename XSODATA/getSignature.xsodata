@@ -1,0 +1,4 @@
+service namespace "DFT.XSODATA.getFieldTicketDetails.xsodata" {
+"DFT"."DFT.Tables::DFT_SIGNATURE" as "DFTSignature";
+}
+ 

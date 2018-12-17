@@ -1,0 +1,11 @@
+table.schemaName = "DFT";
+table.tableType = COLUMNSTORE;
+table.temporary = false;
+table.loggingType = LOGGING;
+table.columns = [
+{name = "reviewerId"; sqlType = NVARCHAR; nullable = false;length = 20;},//Primary Key
+{name = "version"; sqlType = INTEGER; nullable = true; },
+{name = "digitalSignatureUrl";  sqlType = NVARCHAR; nullable = true; length = 255; },
+{name = "MimeType";  sqlType = NVARCHAR; nullable = true;length = 20; }
+];
+table.primaryKey.pkcolumns = ["reviewerId"];

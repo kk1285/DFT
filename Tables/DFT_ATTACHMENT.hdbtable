@@ -1,0 +1,17 @@
+table.schemaName = "DFT";
+table.tableType = COLUMNSTORE;
+table.temporary = false;
+table.loggingType = LOGGING;
+table.columns = [
+{name = "attachmentId"; sqlType = INTEGER; nullable = false;},//Primary Key
+
+{name = "dftNumber"; sqlType = INTEGER; nullable = true; },
+{name = "attachmentName";  sqlType = NVARCHAR; nullable = true; length = 40; },
+{name = "dftAttachmentType";  sqlType = NVARCHAR; nullable = true; length = 20; },
+{name = "createdByName";  sqlType = NVARCHAR; nullable = true; length = 100; },
+{name = "createdOn";  sqlType = TIMESTAMP; nullable = true;  },
+{name = "updatedByName";      sqlType = NVARCHAR; nullable = true; length = 100;  },
+{name = "updatedOn";  sqlType = TIMESTAMP; nullable = true;  },
+{name = "attachmentUrl";      sqlType = NVARCHAR; nullable = true; length = 255;  }
+];
+table.primaryKey.pkcolumns = ["attachmentId"];

@@ -1,0 +1,13 @@
+table.schemaName = "DFT";
+table.tableType = COLUMNSTORE;
+table.temporary = false;
+table.loggingType = LOGGING;
+table.columns = [
+{name = "commentId"; sqlType = INTEGER; nullable = false;},//Primary Key
+
+{name = "dftNumber"; sqlType = INTEGER; nullable = true; },
+{name = "commentedByName";  sqlType = NVARCHAR; nullable = true; length = 100; },
+{name = "commentedOn";  sqlType = TIMESTAMP; nullable = true;  },
+{name = "comment";      sqlType = NVARCHAR; nullable = true; length = 100;  }
+];
+table.primaryKey.pkcolumns = ["commentId"];
